@@ -2,11 +2,10 @@ package com.distribuida.principal;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.distribuida.dao.ProductosDAO;
-import com.distribuida.entities.Cliente;
-import com.distribuida.entities.Productos;
 
-import antlr.collections.List;
+import com.distribuida.dao.ProductosDAO;
+import java.util.List;
+import com.distribuida.entities.Productos;
 
 public class Principal {
 

@@ -13,9 +13,9 @@ public List<Productos> findAll();
 	
 	public Productos findOne(int id);
 	
-	public void add(Productos cliente);
+	public void add(Productos producto);
 	
-	public void up(Productos cliente);
+	public void up(Productos producto);
 	
 	public void del(int id);
 }
