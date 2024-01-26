@@ -27,7 +27,7 @@ public class Categorias {
 	
 	
 public Categorias(int idCategoria, String categoria, String descripcion, String imagen) {
-		super();
+	
 		this.idCategoria = idCategoria;
 		this.categoria = categoria;
 		this.descripcion = descripcion;

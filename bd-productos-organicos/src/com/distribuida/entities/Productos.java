@@ -30,7 +30,7 @@ public class Productos {
 
 	
 public Productos(int idProducto, String nombre, String descripcion, Double precio, int stock, String imagen) {
-		super();
+		
 		this.idProducto = idProducto;
 		this.nombre = nombre;
 		this.descripcion = descripcion;

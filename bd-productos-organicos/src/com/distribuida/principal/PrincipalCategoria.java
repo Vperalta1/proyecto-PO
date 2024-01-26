@@ -3,40 +3,41 @@ package com.distribuida.principal;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
-import com.distribuida.dao.ProductosDAO;
+import com.distribuida.dao.CategoriasDAO;
 import java.util.List;
-import com.distribuida.entities.Productos;
+import com.distribuida.entities.Categorias;
 
-public class Principal {
+public class PrincipalCategoria {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 				ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 				
-				ProductosDAO productosDAO = context.getBean("ProductosDAOImpl",ProductosDAO.class);
+				CategoriasDAO categoriasDAO = context.getBean("categoriasDAOImpl",CategoriasDAO.class);
 				
 				
 				//CRUD
 				
 				//ADD
-				Productos producto =new Productos();
-				//clienteDAO.add(cliente);
+				Categorias categoria =new Categorias(0,"frutas","saludables","frutas.jpg");
+				categoriasDAO.add(categoria);
 				
 				//UP
-				Productos producto2 =new Productos();
-				//clienteDAO.up(cliente1);
+				Categorias categoria2 =new Categorias();
+			//categoriasDAO.up(categoria2);
 				
 				//	DEL
+				//categoriasDAO.del(1);
 				
 				//findAll
-				List<Productos> clientes=productosDAO.findAll();
+				List<Categorias> categorias=categoriasDAO.findAll();
 				
 				
 				
 				
 				//impresion
-				for (Productos item : clientes) {
+				for (Categorias item : categorias) {
 					System.out.println(item.toString());
 				}
 				
